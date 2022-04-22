@@ -1,0 +1,238 @@
+body {
+  background-color: rgba(95, 95, 223, 0.815);
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+nav * {
+  color: rgb(212, 27, 27);
+}
+
+nav *:visited {
+  color: white;
+}
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: rgb(43, 226, 19);
+  cursor: pointer;
+}
+
+.SignIn {
+  position: absolute;
+  height: 80vh;
+  width: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(214, 32, 32);
+  color: rgb(0, 0, 0);
+}
+
+.SignInForm {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 30% 1fr 1fr 20% 2fr 40%;
+  grid-template-areas:
+    "header header"
+    "username_label username_input"
+    "password_label password_input"
+    "buffer buffer"
+    "submit_button submit_button"
+    "buffer_two buffer_two";
+}
+
+.SignInForm > h1 {
+  justify-self: center;
+  align-self: center;
+  grid-area: header;
+}
+
+.SignInForm > label[for="username"] {
+  grid-area: username_label;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.SignInForm > label[for="password"] {
+  grid-area: password_label;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.SignInForm > input[name="username"] {
+  grid-area: username_input;
+  margin: 20px;
+  width: 80%;
+}
+
+.SignInForm > input[name="password"] {
+  grid-area: password_input;
+  margin: 20px;
+  width: 80%;
+}
+
+.SignInForm > button {
+  justify-self: center;
+  max-width: 80px;
+  grid-area: submit_button;
+}
+
+.SignUp {
+  position: absolute;
+  height: 80vh;
+  width: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(32, 214, 144);
+  color: rgb(0, 0, 0);
+}
+.SignUpForm {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 30% 1fr 1fr 20% 2fr 40%;
+  grid-template-areas:
+    "header header"
+    "username_label username_input"
+    "password_label password_input"
+    "buffer buffer"
+    "submit_button submit_button"
+    "buffer_two buffer_two";
+}
+.SignUpForm > h1 {
+  justify-self: center;
+  align-self: center;
+  grid-area: header;
+}
+
+.SignUpForm > label[for="username"] {
+  grid-area: username_label;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.SignUpForm > label[for="password"] {
+  grid-area: password_label;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.SignUpForm > input[name="username"] {
+  grid-area: username_input;
+  margin: 20px;
+  width: 80%;
+}
+
+.SignUpForm > input[name="password"] {
+  grid-area: password_input;
+  margin: 20px;
+  width: 80%;
+}
+
+.SignUpForm > button {
+  justify-self: center;
+  max-width: 80px;
+  grid-area: submit_button;
+}
+.post {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 40px -8px rgb(43, 226, 19);
+  box-shadow: 0px 0px 40px -8px rgb(43, 226, 19);
+  margin: 30px 0;
+}
+
+.postWrapper {
+  padding: 10px;
+}
+
+.postTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postTopLeft {
+  display: flex;
+  align-items: center;
+}
+
+.postProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.postUsername {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.postDate {
+  font-size: 12px;
+}
+
+.postCenter {
+  margin: 20px 0;
+}
+
+.postImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.likeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.postLikeCounter {
+  font-size: 15px;
+}
+
+.postCommentText {
+  cursor: pointer;
+  border-bottom: 1px dashed gray;
+  font-size: 15px;
+}
